@@ -1,4 +1,4 @@
-/* Learn Git Branching — static client (Pyodide + lgb package). */
+/* learn-streamlit — static client (Pyodide + lgb package). */
 
 const bootStatus = document.getElementById("boot-status");
 const graphEl = document.getElementById("graph");

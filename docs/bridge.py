@@ -25,7 +25,7 @@ class Session:
         self.solved: bool = False
         self.show_solution: bool = False
         self.terminal: list[str] = [
-            "Learn Git Branching",
+            "learn-streamlit",
             "Type `help` for commands, `levels` for challenges.",
             "",
         ]

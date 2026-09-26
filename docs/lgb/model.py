@@ -1,4 +1,4 @@
-"""In-memory simulated git object model for Learn Git Branching.
+"""In-memory simulated git object model for learn-streamlit.
 
 The engine is a pure structural model of commits, refs, and HEAD. It never
 touches the filesystem or a real git binary. Object ids are opaque strings

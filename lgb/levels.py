@@ -1,4 +1,4 @@
-"""Level catalog for Learn Git Branching (Streamlit).
+"""Level catalog for learn-streamlit.
 
 Each level stores an LGB-compatible start tree, goal tree, solution command
 string, English copy, and a golf target (optimal command count).

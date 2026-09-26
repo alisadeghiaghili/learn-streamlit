@@ -1,8 +1,4 @@
-"""Learn Git Branching — Streamlit app.
-
-An interactive git visualizer, sandbox, and level-based tutorial inspired by
-https://github.com/pcottle/learnGitBranching
-"""
+"""learn-streamlit — Streamlit git visualizer, sandbox, and level tutorial."""
 
 from __future__ import annotations
 
@@ -25,7 +21,7 @@ from lgb.model import GitEngine, GitError
 from lgb.viz import PALETTE, render_graph_svg
 
 st.set_page_config(
-    page_title="Learn Git Branching",
+    page_title="learn-streamlit",
     page_icon=":material/account_tree:",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -101,7 +97,7 @@ def _init_state() -> None:
         st.session_state.undo_stack: list[GitEngine] = []
     if "terminal" not in st.session_state:
         st.session_state.terminal: list[str] = [
-            "Learn Git Branching (Streamlit clone)",
+            "learn-streamlit",
             "Type `help` for commands, `levels` for challenges.",
             "",
         ]
@@ -301,8 +297,8 @@ def _catalog_view() -> None:
 
 def _sidebar() -> None:
     """Render the sidebar: mode switch, goal, level copy, progress."""
-    st.markdown("### Learn Git Branching")
-    st.caption("Streamlit clone of pcottle/learnGitBranching")
+    st.markdown("### learn-streamlit")
+    st.caption("Interactive git visualizer, sandbox, and levels")
 
     mode = st.radio(
         "Mode",
@@ -376,8 +372,8 @@ def _sidebar() -> None:
 def _main_header() -> None:
     """Render the title row."""
     st.markdown(
-        "<h1 class='lgb-title'>learn git branching</h1>"
-        "<p class='lgb-meta'>visualize · sandbox · levels</p>",
+        "<h1 class='lgb-title'>learn-streamlit</h1>"
+        "<p class='lgb-meta'>git visualizer · sandbox · levels</p>",
         unsafe_allow_html=True,
     )
 

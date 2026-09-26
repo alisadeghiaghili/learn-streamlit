@@ -1,4 +1,4 @@
-"""Learn Git Branching — Streamlit educational git sandbox and level system."""
+"""learn-streamlit — educational git sandbox and level system."""
 
 from lgb.commands import CommandError, execute_line, split_commands
 from lgb.goal import GoalError, is_goal_reached

@@ -1,14 +1,13 @@
-# Learn Git Branching
+# learn-streamlit
 
-Interactive git visualizer, sandbox, and level-based tutorial — inspired by
-[pcottle/learnGitBranching](https://github.com/pcottle/learnGitBranching).
+Interactive git visualizer, sandbox, and level-based tutorial built with Streamlit and a static Pyodide client.
 
 ## Play online
 
 GitHub Pages (Pyodide, fully in-browser):
 
 ```
-https://alisadeghiaghili.github.io/learn-git-branching-streamlit/
+https://alisadeghiaghili.github.io/learn-streamlit/
 ```
 
 ## Run locally

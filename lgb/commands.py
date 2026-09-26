@@ -174,7 +174,7 @@ def help_lines() -> list[str]:
         Help lines for the terminal pane.
     """
     return [
-        "Learn Git Branching — Streamlit clone",
+        "learn-streamlit — git sandbox and levels",
         "",
         "git commit                    create a commit on the current branch",
         "git branch <name>             create a branch at HEAD",
