@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learn Git Branching</title>
+    <meta
+      name="description"
+      content="Interactive git visualizer, sandbox, and level-based tutorial."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <header class="brand">
+          <h1>learn git branching</h1>
+          <p>visualize · sandbox · levels</p>
+        </header>
+
+        <nav class="mode-switch" aria-label="Mode">
+          <button data-mode="sandbox" class="mode-btn active">Sandbox</button>
+          <button data-mode="levels" class="mode-btn">Levels</button>
+          <button data-mode="catalog" class="mode-btn">Catalog</button>
+        </nav>
+
+        <section id="level-panel" class="panel hidden">
+          <h2 id="level-name">—</h2>
+          <p id="level-lesson" class="lesson"></p>
+          <p class="label">Hint</p>
+          <p id="level-hint" class="hint"></p>
+          <p class="label">Git golf</p>
+          <p id="level-golf" class="meta"></p>
+          <div class="row">
+            <button id="btn-reset-level" class="btn">Reset level</button>
+            <button id="btn-solution" class="btn">Show solution</button>
+          </div>
+          <pre id="solution-box" class="solution hidden"></pre>
+          <p class="label">Goal tree</p>
+          <div id="goal-graph" class="goal-graph"></div>
+          <div id="win-banner" class="win hidden">Level complete. Nice work.</div>
+          <div class="row" id="level-nav"></div>
+        </section>
+
+        <section class="panel">
+          <p class="label">Progress</p>
+          <p id="progress" class="meta">0 / 0 levels solved</p>
+          <p class="label">Commands this run</p>
+          <p id="cmd-count" class="meta">0</p>
+        </section>
+
+        <footer class="foot">
+          Inspired by
+          <a href="https://github.com/pcottle/learnGitBranching" target="_blank" rel="noreferrer"
+            >pcottle/learnGitBranching</a
+          >
+        </footer>
+      </aside>
+
+      <main class="main">
+        <section class="graph-wrap">
+          <div class="graph-head">
+            <h2>Commit tree</h2>
+            <span id="boot-status" class="meta">loading python…</span>
+          </div>
+          <div id="graph" class="graph" aria-live="polite"></div>
+        </section>
+
+        <section class="terminal-wrap">
+          <h2>Terminal</h2>
+          <pre id="terminal" class="terminal"></pre>
+          <form id="cmd-form" class="cmd-form" autocomplete="off">
+            <input
+              id="cmd-input"
+              type="text"
+              spellcheck="false"
+              placeholder="git commit; git checkout -b bugFix"
+              aria-label="Git command"
+            />
+            <button type="submit" class="btn primary">Run</button>
+            <button type="button" id="btn-undo" class="btn">Undo</button>
+            <button type="button" id="btn-reset" class="btn">Reset</button>
+          </form>
+          <details class="cheatsheet">
+            <summary>Command cheatsheet</summary>
+            <pre id="help-box"></pre>
+          </details>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
