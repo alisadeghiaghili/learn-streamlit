@@ -8,7 +8,7 @@ Interactive git visualizer, sandbox, and level-based tutorial — inspired by
 GitHub Pages (Pyodide, fully in-browser):
 
 ```
-https://alisadeghiaghili.github.io/learn-git-branching/
+https://alisadeghiaghili.github.io/learn-git-branching-streamlit/
 ```
 
 ## Run locally
